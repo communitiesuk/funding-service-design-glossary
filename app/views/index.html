@@ -1,0 +1,436 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+<!--/BREADCRUMB-->
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Funding glossary</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Introduction</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+<!--/BREADCRUMB-->
+<!--/MAIN-->
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>Funding terms can be complicated and difficult to understand. This funding glossary will help you to: </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>understand what a term means</li>
+        <li>work out if you're using the correct term to describe something</li>
+        <li>find a simpler alternative</li>
+      </ul>
+      <p><strong>Last updated:</strong> 9 June  2022</p>
+      <!--ACCORDION-->
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <!--A-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">A</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            
+            <h3 id="applicant"  class="govuk-heading-s">Applicant</h3>
+            <p class="govuk-body">A person or organisation applying to government for funding. </p>
+
+            <h3 id="application"  class="govuk-heading-s">Application</h3>
+            <p class="govuk-body">The information an applicant provides to support their request for funding. </p>
+          </div>
+        </div>
+        <!--B-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">B</span></h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+            <h3 id="bid"  class="govuk-heading-s">Bid</h3>
+            <p class="govuk-body">Bid is often used interchangeably with <a href="#application">application</a>. We recommend using application, as it is universally applicable.</p>
+          </div>
+        </div>
+        <!--C-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-3">C</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+
+            <h3 id="capital-grant"  class="govuk-heading-s">Capital grant</h3>
+            <p class="govuk-body">A sum of money given by government to an organisation to buy or improve:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>buildings</li>
+              <li>land</li>
+              <li>equipment</li>
+            </ul>
+          <p class="govuk-body"><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1015747/Govt_Functional_Std_GovS006_v2.0.pdf ">Government functional standard (opens in a PDF)</a></p>
+           
+          <h3 id="criteria"  class="govuk-heading-s">Criteria</h3>
+            <p class="govuk-body">The conditions a project has to meet to be eligible to receive money from a fund. For example, grants to assist people affected by floods. <br/><strong>Source: </strong><a href="https://www.gov.uk/government/publications/functional-standards-common-glossary/functional-standards-common-glossary#contents">Government functional standards common glossary</a> </p>
+          </div>
+        </div>
+          <!--D-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                D
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+         <!--E-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-5">
+                E
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-5" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-5">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+         <!--F-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-6">
+                F
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-6" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-6">
+            <h3 id="full-business-case"  class="govuk-heading-s">Full business case</h3>
+            <p class="govuk-body">Also known as a final business case.</p>
+            <p class="govuk-body">A full business case is part of a proposal for a big project. It should:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>include the most financially viable offer</li>
+              <li>confirm affordability</li>
+              <li>put in place the detailed arrangements for successful delivery</li>
+            </ul>
+          <p class="govuk-body"><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/749086/Project_Business_Case_2018.pdf">Project business case guidance (opens in a PDF)</a></p>
+           
+            <h3 id="funding-agreement"  class="govuk-heading-s">Funding agreement</h3>
+            <p class="govuk-body">The conditions that an applicant must meet to receive funding. If an applicant meets these conditions, they can receive largest amount allowed.</p>
+          </div>
+        </div>
+         <!--G-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-7">G</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-7" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-7">
+            <h3 id="grant"  class="govuk-heading-s">Grant</h3>
+            <p class="govuk-body">A grant is way of government providing money to organisations and individuals. Grants advance government policy but do not give a direct economic benefit to the recipient.</p>
+            <p class="govuk-body">A grant is usually given as a sum of money if the applicant meets the conditions of the fund. </p>
+            <p class="govuk-body">The money can be reclaimed under certain conditions, for example, if the recipient:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>misuses the money</li>
+              <li>fails to spend any of the money</li>
+          </ul>
+          </div>
+        </div>
+          <!--H-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-8">H</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-8" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-8">
+            <h3 id="heads-of-lease"  class="govuk-heading-s">Heads of lease</h3>
+            <p class="govuk-body">Before they sign a commercial rental agreement, the landlord and renter will agree on terms. </p>
+            <p class="govuk-body">This is a document which reflects the commercial deal agreed: </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>between two parties</li>
+                <li>outlines the fundamental terms</li>
+            </ul>
+            <p class="govuk-body">These are usually included in the first draft of the legal documentation. The solicitor for either party can do this.</p>
+          </div>
+        </div>
+        <!--I-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-9">I</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-9" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-9">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--J-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-10">J</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-10" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-10">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--K-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-11">K</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-11" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-11">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--L-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-12">L</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-12" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-12">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--M-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-13">M</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-13" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-13">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+         <!--N-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-14">N</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-14" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-14">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--O-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-15">O</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-15" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-15">
+            <h3 id="outcome"  class="govuk-heading-s">Outcome</h3>
+            <p class="govuk-body">An outcome is the impact of a change to a public service. Outcomes measure impact by how much it affects society. For example, changes in cardiovascular surgery improves life expectancy of the population.<br/><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1063330/Green_Book_2022.pdf">Government Green Book (opens in a PDF)</a> </p>
+            
+            <h3 id="output"  class="govuk-heading-s">Output</h3>
+            <p class="govuk-body">An output is a measurable change in a public service. It can relate to the level or quality of a service. For example, more successful cardiovascular operations carried out.<br/><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1063330/Green_Book_2022.pdf">Government Green Book (opens in a PDF)</a> </p>
+          </div>
+        </div>
+         <!--P-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-16">P</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-16" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-16">
+            <h3 id="project"  class="govuk-heading-s">Project</h3>
+            <p class="govuk-body">A piece of work that delivers an output. <br/><strong>Source: </strong><a href="https://www.gov.uk/government/publications/functional-standards-common-glossary/functional-standards-common-glossary#contents">Government functional standards common glossary</a> </p>
+          
+            <h3 id="psed"  class="govuk-heading-s">Public Sector Equality Duty (PSED)</h3>
+            <p class="govuk-body">In their work, public bodies must:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>end unlawful discrimination</li>
+              <li>remove barriers for people with protected characteristics</li>
+              <li>foster good relations between different people</li>
+            </ul>
+            <p class="govuk-body"><strong>Source:</strong> <a href="https://www.gov.uk/government/groups/review-of-public-sector-equality-duty-steering-group">Review of public sector equality duty</a> </p>
+          </div>
+        </div>
+        <!--Q-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-17">Q</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-17" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-17">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--R-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-18">R</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-18" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-18">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--S-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-19">S</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-19" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-19">
+            <h3 id="subsidy-control-bill"  class="govuk-heading-s">Subsidy control bill</h3>
+            <p class="govuk-body">A legal document that explains how the subsidy control regime will work in the UK.</p>
+          </div>
+        </div>
+        <!--T-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-20">T</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-20" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-20">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--U-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-21">U</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-21" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-21">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--V-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-22">V</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-22" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-22">
+            <h3 id="vfm"  class="govuk-heading-s">Value for Money (VfM)</h3>
+            <p class="govuk-body">A judgement on whether a project will offer good value to the public. It relies on the information provided by the applicant. </p>
+            <p class="govuk-body">A value for money judgement is made up of:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>benefit cost ratio (BCR)</li>
+              <li>the project deliverables</li>
+              <li>the project risks</li>
+              <li>the organisation's ability to deliver its proposal</li>
+              <li>fit with government strategies and policies</li>
+            </ul>
+            <p class="govuk-body"><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1063330/Green_Book_2022.pdf">Government Green Book (opens in a PDF)</a> </p>
+          </div>
+        </div>
+         <!--W-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-23">W</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-23" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-23">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--X-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-24">X</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-24" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-24">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--Y-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-25">Y</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-25" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-25">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+        <!--Z-->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-26">Z</span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-26" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-26">
+            <p class="govuk-body">There are no entries in this section</p>
+          </div>
+        </div>
+      </div>
+
+      <!--/ACCORDION-->
+<!--START NOW BUTTON-->
+     <!-- <a href="#" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>-->
+<!--/START NOW BUTTON-->
+
+    </div>
+    <!--/MAIN-->
+<!--RHS-->
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">Scope</h2>
+        <p class="govuk-list govuk-!-font-size-16">This glossary covers funding terms used in: </p>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li> <a href="#">Community ownership fund</a></li>
+         
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+    <!--/RHS-->
+  </div>
+{% endblock %}
