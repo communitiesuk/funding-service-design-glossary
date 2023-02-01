@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Start page example
+  Funding Glossary
 {% endblock %}
 
 {% block header %}
@@ -18,9 +18,6 @@
       <li class="govuk-breadcrumbs__list-item">
         <a class="govuk-breadcrumbs__link" href="#">Funding glossary</a>
       </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link">Introduction</a>
-      </li>
     </ol>
   </div>
 {% endblock %}
@@ -30,17 +27,17 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
+      <h1 class="govuk-heading-l">
         {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
-      <p>Funding terms can be complicated and difficult to understand. This funding glossary will help you to: </p>
+      <p class="govuk-body">Funding terms can be complicated and difficult to understand. This funding glossary will help you to: </p>
 
       <ul class="govuk-list govuk-list--bullet">
         <li>understand what a term means</li>
         <li>provide the best evidence or examples in your application</li>
       </ul>
-      <p><strong>Last updated:</strong> 9 December 2022</p>
+      <p><strong>Last updated:</strong> 11 January 2023</p>
       <!--ACCORDION-->
       <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
         <!--A-->
@@ -57,11 +54,13 @@
 
             <h3 id="application"  class="govuk-heading-s">Application</h3>
             <p class="govuk-body">The information an applicant provides to support their request for funding. </p>
+            
             <h3 id="asset" class="govuk-heading-s">Asset</h3>
             <p class="govuk-body">An item of monetary value that an organisation owns.</p>
-            <p class="govuk-body">Assets are usually large value items and can be sold at the end of a project.</p>
+            <p class="govuk-body">Assets can be sold at the end of a project.</p>
+            
             <h3 id="assurance" class="govuk-heading-s">Assurance</h3>
-            <p class="govuk-body">Checks that take place after an application has been submitted, assessed and contracted with a grant funding agreement.</p>
+            <p class="govuk-body">Assurance checks take place to give DLUHC confidence that planned activity is taking place and money is being spent as intended.</p>
           </div>
         </div>
         <!--B-->
@@ -84,7 +83,8 @@
           </div>
           <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
             <h3 id="capital-funding" class="govuk-heading-s">Capital funding</h3>
-            <p class="govuk-body">Used to purchase or lease the asset and pay for refurbishment costs.</p>
+            <p class="govuk-body">Money used to buy, lease or improve capital assets, such as buildings, land or equipment.</p>
+            
             <h3 id="capital-grant"  class="govuk-heading-s">Capital grant</h3>
             <p class="govuk-body">A sum of money given by government to an organisation to buy or improve:</p>
             <ul class="govuk-list govuk-list--bullet">
@@ -92,11 +92,10 @@
               <li>land</li>
               <li>equipment</li>
             </ul>
-          <p class="govuk-body"><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1015747/Govt_Functional_Std_GovS006_v2.0.pdf ">Government functional standard (opens in a PDF)</a></p>
-           <h3 id="contract-manager" class="govuk-heading-s">Contract manager</h3>
-           <p class="govuk-body">A member of staff at DLUHC responsible for the delivery of a project.</p>
-          <h3 id="criteria"  class="govuk-heading-s">Criteria</h3>
-            <p class="govuk-body">The conditions a project has to meet to be eligible to receive money from a fund. For example, grants to assist people affected by floods. <br/><strong>Source: </strong><a href="https://www.gov.uk/government/publications/functional-standards-common-glossary/functional-standards-common-glossary#contents">Government functional standards common glossary</a> </p>
+            
+            <h3 id="criteria" class="govuk-heading-s">Criteria</h3>
+            <p class="govuk-body">Specific criteria that a project has to meet to be eligible to receive funding. For example, grants to assist people affected by floods.</p>
+            <p class="govuk-body">Source: <a href="https://www.gov.uk/government/publications/functional-standards-common-glossary/functional-standards-common-glossary#contents">Government functional standards common glossary</a></p>
           </div>
         </div>
           <!--D-->
@@ -144,10 +143,7 @@
               <li>confirm affordability</li>
               <li>put in place the detailed arrangements for successful delivery</li>
             </ul>
-          <p class="govuk-body"><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/749086/Project_Business_Case_2018.pdf">Project business case guidance (opens in a PDF)</a></p>
-           
-            <h3 id="funding-agreement"  class="govuk-heading-s">Funding agreement</h3>
-            <p class="govuk-body">The conditions that an applicant must meet to receive funding. If an applicant meets these conditions, they can receive largest amount allowed.</p>
+            <p class="govuk-body"><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/749086/Project_Business_Case_2018.pdf">Project business case guidance (opens in a PDF)</a></p>
           </div>
         </div>
          <!--G-->
@@ -158,20 +154,28 @@
             </h2>
           </div>
           <div id="accordion-default-content-7" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-7">
+            
             <h3 id="grant"  class="govuk-heading-s">Grant</h3>
-            <p class="govuk-body">A grant is way of government providing money to organisations and individuals. Grants advance government policy but do not give a direct economic benefit to the recipient.</p>
-            <p class="govuk-body">A grant is usually given as a sum of money if the applicant meets the conditions of the fund. </p>
+            <p class="govuk-body">A grant is a way of the government providing money to organisations and individuals. Grants advance government policy but do not give a direct economic benefit to the recipient.</p>
+            <p class="govuk-body">A grant is usually given as a sum of money if the applicant meets the conditions of the fund.</p>
             <p class="govuk-body">The money can be reclaimed under certain conditions, for example, if the recipient:</p>
             <ul class="govuk-list govuk-list--bullet">
               <li>misuses the money</li>
               <li>fails to spend any of the money</li>
+              <li>is unlikely to spend the money within the agreed timeframe</li>
             </ul>
+            
             <h3 id="grant-funding-agreements" class="govuk-heading-s">Grant funding agreements</h3>
-            <p class="govuk-body">Sometimes called ‘GFAs’.</p>
-            <p class="govuk-body">The contract written with the applicant when DLUHC decide to fund an application.</p>
+            <p class="govuk-body">Also known as GFAs.</p>
+            <p class="govuk-body">The conditions that an applicant must meet to receive funding.</p>
+            
+            <h3 id="grant-manager" class="govuk-heading-s">Grant manager</h3>
+            <p class="govuk-body">Also known as contract manager for some DLUHC projects.</p>
+            <p class="govuk-body">A member of staff at DLUHC responsible for the delivery of a project.</p>
+            
             <h3 id="grant-recipient" class="govuk-heading-s">Grant recipients</h3>
-            <p class="govuk-body">Sometimes called ‘GRs’.</p>
-            <p class="govuk-body">The project that is receiving funding.</p>
+            <p class="govuk-body">Also known as GRs.</p>
+            <p class="govuk-body">The projects or organisations that are receiving funding.</p>
             <h3 id="green-book" class="govuk-heading-s">The Green Book</h3>
             <p class="govuk-body">HM Treasury guidance on how to appraise and evaluate policies, projects and programmes.</p>
           </div>
@@ -202,12 +206,17 @@
             </h2>
           </div>
           <div id="accordion-default-content-9" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-9">
+            
+            <h3 id="intervention" class="govuk-heading-s">Intervention</h3>
+            <p class="govuk-body">A range of specific strategic policy objectives designed to achieve a vision or overall mission.</p>
+            
             <h3 id="intervention-rate" class="govuk-heading-s">Intervention rate</h3>
             <p class="govuk-body">A rate at which DLUHC will pay claims.</p>
             <p class="govuk-body">Some funds will agree to an intervention rate of payment. It will depend on where in the country a project is. Areas that might need support could receive payment of a higher intervention rate.</p>
             <p class="govuk-body">For example, if an intervention rate is 80%, when a grant recipient submits a claim for £100, DLUHC will only pay £80 of the claim.</p>
+            
             <h3 id="interventions-toolkit" class="govuk-heading-s">Interventions toolkit</h3>
-            <p class="govuk-body">A range of specific strategic policy objectives designed to achieve a vision or overall mission.</p>
+            <p class="govuk-body">A range of specific strategic policy objectives designed to achieve a vision or overall mission.</p>          
           </div>
         </div>
         <!--J-->
@@ -240,8 +249,10 @@
             </h2>
           </div>
           <div id="accordion-default-content-12" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-12">
+            
             <h3 id="levelling-up"  class="govuk-heading-s">Levelling up</h3>
-            <p class="govuk-body">Tackling inequality in different places and regions.</p>
+            <p class="govuk-body">Political policy that tackles inequality in different places and regions.</p>
+          
           </div>
         </div>
         <!--M-->
@@ -252,8 +263,9 @@
             </h2>
           </div>
           <div id="accordion-default-content-13" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-13">
+            
             <h3 id="outcome"  class="govuk-heading-s">Match funding</h3>
-            <p class="govuk-body">A percentage of money that will need raising by a non-government source. </p>
+            <p class="govuk-body">An amount of money that might need raising by another funder.</p>
             <p class="govuk-body">Sources include:</p>
             <ul class="govuk-list govuk-list--bullet">
               <li>public bodies</li>
@@ -265,6 +277,7 @@
               <li>social investors</li>
               <li>other lenders</li>
             </ul>
+
           </div>
         </div>
          <!--N-->
@@ -287,10 +300,12 @@
           </div>
           <div id="accordion-default-content-15" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-15">
             <h3 id="outcome"  class="govuk-heading-s">Outcome</h3>
-            <p class="govuk-body">An outcome is the impact of a change to a public service. Outcomes measure impact by how much it affects society. For example, changes in cardiovascular surgery improves life expectancy of the population.<br/><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1063330/Green_Book_2022.pdf">Government Green Book (opens in a PDF)</a> </p>
+            <p class="govuk-body">An outcome is the impact of a change. Outcomes measure impact by how much it affects society.</p>
+            <p class="govuk-body"><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1063330/Green_Book_2022.pdf">Government Green Book (opens in a PDF)</a> </p>
             
             <h3 id="output"  class="govuk-heading-s">Output</h3>
-            <p class="govuk-body">An output is a measurable change in a public service. It can relate to the level or quality of a service. For example, more successful cardiovascular operations carried out.<br/><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1063330/Green_Book_2022.pdf">Government Green Book (opens in a PDF)</a> </p>
+            <p class="govuk-body">An output is a measurable change. It can relate to the level or quality of a service. </p>
+            <p class="govuk-body"><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1063330/Green_Book_2022.pdf">Government Green Book (opens in a PDF)</a> </p>
           </div>
         </div>
          <!--P-->
@@ -302,10 +317,11 @@
           </div>
           <div id="accordion-default-content-16" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-16">
             <h3 id="project"  class="govuk-heading-s">Project</h3>
-            <p class="govuk-body">A piece of work that delivers an output. <br/><strong>Source: </strong><a href="https://www.gov.uk/government/publications/functional-standards-common-glossary/functional-standards-common-glossary#contents">Government functional standards common glossary</a> </p>
+            <p class="govuk-body">A piece of work that delivers an output.</p> 
+            <p class="govuk-body"><strong>Source: </strong><a href="https://www.gov.uk/government/publications/functional-standards-common-glossary/functional-standards-common-glossary#contents">Government functional standards common glossary</a> </p>
           
             <h3 id="psed"  class="govuk-heading-s">Public Sector Equality Duty (PSED)</h3>
-            <p class="govuk-body">In their work, public bodies must:</p>
+            <p class="govuk-body">In all their work, public bodies must think about the need to:</p>
             <ul class="govuk-list govuk-list--bullet">
               <li>end unlawful discrimination</li>
               <li>remove barriers for people with protected characteristics</li>
@@ -350,7 +366,7 @@
             </h2>
           </div>
           <div id="accordion-default-content-19" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-19">
-            <h3 id="subsidy-control-bill"  class="govuk-heading-s">Subsidy control bill</h3>
+            <h3 id="subsidy-control-regime"  class="govuk-heading-s">Subsidy control regime</h3>
             <p class="govuk-body">A legal document that explains how the subsidy control regime will work in the UK.</p>
           </div>
         </div>
@@ -384,8 +400,9 @@
             </h2>
           </div>
           <div id="accordion-default-content-22" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-22">
+            
             <h3 id="vfm"  class="govuk-heading-s">Value for Money (VfM)</h3>
-            <p class="govuk-body">A judgement on whether a project will offer good value to the public. It relies on the information provided by the applicant. </p>
+            <p class="govuk-body">A judgement on whether a project will offer good value to the public. It relies on the information provided by the applicant.</p>
             <p class="govuk-body">A value for money judgement is made up of:</p>
             <ul class="govuk-list govuk-list--bullet">
               <li>benefit cost ratio (BCR)</li>
@@ -395,6 +412,7 @@
               <li>fit with government strategies and policies</li>
             </ul>
             <p class="govuk-body"><strong>Source: </strong><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1063330/Green_Book_2022.pdf">Government Green Book (opens in a PDF)</a> </p>
+          
           </div>
         </div>
          <!--W-->
@@ -445,14 +463,6 @@
       </div>
 
       <!--/ACCORDION-->
-<!--START NOW BUTTON-->
-     <!-- <a href="#" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
-        Start now
-        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
-          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
-        </svg>
-      </a>-->
-<!--/START NOW BUTTON-->
 
     </div>
     <!--/MAIN-->
